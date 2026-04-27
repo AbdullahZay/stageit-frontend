@@ -1,0 +1,17 @@
+.app {
+  background-color: #F5F0E8;
+  min-height: 100vh;
+  padding: 20px;
+  font-family: Georgia, serif;
+  color: #2C2C2C;
+}
+
+.app.light {
+  background-color: #F5F0E8;
+  color: #2C2C2C;
+}
+
+.app.dark {
+  background-color: #1A1A2E;
+  color: #F5F0E8;
+}
