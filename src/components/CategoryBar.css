@@ -1,0 +1,40 @@
+.category-bar {
+  display: flex;
+  gap: 10px;
+  padding: 15px 0;
+}
+
+.category-pill {
+  background-color: #E8E0D0;
+  border: none;
+  border-radius: 20px;
+  padding: 8px 20px;
+  font-family: Georgia, serif;
+  font-size: 14px;
+  color: #2C2C2C;
+  cursor: pointer;
+}
+
+.category-pill.selected {
+  background-color: #8B7355;
+  color: #F5F0E8;
+}
+
+.category-pill:hover {
+  background-color: #8B7355;
+  color: #F5F0E8;
+}
+
+.app.dark .category-bar {
+  background-color: #1A1A2E;
+}
+
+.app.dark .category-pill {
+  background-color: #2C2C4E;
+  color: #F5F0E8;
+}
+
+.app.dark .category-pill.selected {
+  background-color: #8B7355;
+  color: #F5F0E8;
+}
