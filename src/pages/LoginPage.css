@@ -1,0 +1,81 @@
+.login {
+    max-width: 400px;
+    margin: 80px auto;
+    padding: 40px;
+    background-color: #FFFFFF;
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.login-title {
+    font-family: Georgia, serif;
+    font-size: 28px;
+    color: #8B7355;
+    text-align: center;
+}
+
+.login-subtitle {
+    font-family: Georgia, serif;
+    font-size: 18px;
+    color: #2C2C2C;
+    text-align: center;
+    font-weight: normal;
+}
+
+.login input {
+    padding: 12px 16px;
+    border: 1px solid #E8E0D0;
+    border-radius: 20px;
+    font-family: Georgia, serif;
+    font-size: 14px;
+    outline: none;
+}
+
+.login button {
+    padding: 12px;
+    background-color: #8B7355;
+    color: #F5F0E8;
+    border: none;
+    border-radius: 20px;
+    font-family: Georgia, serif;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.login p {
+    text-align: center;
+    font-family: Georgia, serif;
+    font-size: 14px;
+    color: #2C2C2C;
+}
+
+.login p span {
+    color: #8B7355;
+    cursor: pointer;
+}
+
+.app.dark .login {
+    background-color: #2C2C4E;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.app.dark .login-subtitle {
+    color: #F5F0E8;
+}
+
+.app.dark .login p {
+    color: #F5F0E8;
+}
+
+.app.dark .login input {
+    background-color: #1A1A2E;
+    border: 1px solid #8B7355;
+    color: #F5F0E8;
+}
+
+.app.dark .login input::placeholder {
+    color: #9090A0;
+}
