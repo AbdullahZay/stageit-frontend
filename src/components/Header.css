@@ -1,0 +1,75 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background-color: #F5F0E8;
+  border-bottom: 1px solid #E8E0D0;
+}
+
+.header-logo {
+  font-family: Georgia, serif;
+  font-size: 28px;
+  color: #2C2C2C;
+  letter-spacing: 2px;
+  text-decoration: none;
+}
+
+.header-buttons {
+  display: flex;
+  gap: 12px;
+}
+
+.header-register {
+  background-color: transparent;
+  border: 1px solid #8B7355;
+  border-radius: 20px;
+  padding: 8px 20px;
+  font-family: Georgia, serif;
+  color: #8B7355;
+  cursor: pointer;
+}
+
+.header-login {
+  background-color: #8B7355;
+  border: none;
+  border-radius: 20px;
+  padding: 8px 20px;
+  font-family: Georgia, serif;
+  color: #F5F0E8;
+  cursor: pointer;
+}
+
+.app.dark .header {
+  background-color: #1A1A2E;
+  border-bottom: 1px solid #2C2C4E;
+}
+
+.app.dark .header-logo {
+  color: #F5F0E8;
+}
+
+.app.dark .header-register {
+  border-color: #F5F0E8;
+  color: #F5F0E8;
+}
+
+.app.dark .header-login {
+  background-color: #F5F0E8;
+  color: #1A1A2E;
+}
+
+.app.dark .header-theme {
+  background-color: transparent;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.header-theme {
+  background-color: transparent;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+
