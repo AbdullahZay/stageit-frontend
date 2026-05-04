@@ -1,0 +1,68 @@
+.user-profile {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.user-profile-header {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 40px;
+    padding: 30px;
+    background-color: #FFFFFF;
+    border-radius: 16px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.user-profile-placeholder {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #8B7355;
+    color: #F5F0E8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Georgia, serif;
+    font-size: 40px;
+}
+
+.user-profile-image img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.user-profile-info h1 {
+    font-family: Georgia, serif;
+    font-size: 28px;
+    color: #2C2C2C;
+    margin-bottom: 8px;
+}
+
+.user-profile-info p {
+    font-family: Georgia, serif;
+    font-size: 16px;
+    color: #8B7355;
+}
+
+.user-profile-posts-title {
+    font-family: Georgia, serif;
+    font-size: 22px;
+    color: #2C2C2C;
+    margin-bottom: 20px;
+}
+
+.app.dark .user-profile-header {
+    background-color: #2C2C4E;
+}
+
+.app.dark .user-profile-info h1 {
+    color: #F5F0E8;
+}
+
+.app.dark .user-profile-posts-title {
+    color: #F5F0E8;
+}
