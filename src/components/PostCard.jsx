@@ -11,6 +11,12 @@ function PostCard({ post }) {
             <div className="post-card-title" >
                 {post.title}
             </div>
+            <div className="post-card-username" onClick={(e) => {
+                e.stopPropagation()
+                navigate(`/users/${post.username}`)
+            }}>
+                {post.username}
+            </div>
         </div>
     )
 }

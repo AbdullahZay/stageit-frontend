@@ -42,3 +42,14 @@
   background-color: #2C2C4E;
   color: #F5F0E8;
 }
+
+.post-card-username {
+    padding: 4px 12px 12px 12px;
+    font-family: Georgia, serif;
+    font-size: 14px;
+    color: #8B7355;
+}
+
+.post-card-username:hover {
+    text-decoration: underline;
+}
