@@ -128,7 +128,6 @@
     font-family: Georgia, serif;
 }
 
-/* Light mode comments */
 .app.light .comment-section h2 {
     color: #2C2C2C;
 }
@@ -143,7 +142,6 @@
     border: 1px solid #8B7355;
 }
 
-/* Dark mode comments */
 .app.dark .comment-section h2 {
     color: #F5F0E8;
 }
@@ -156,4 +154,17 @@
 .app.dark .comment-input input {
     color: #F5F0E8;
     border: 1px solid #8B7355;
+}
+
+.post-page-username {
+    display: block;
+    font-family: Georgia, serif;
+    font-size: 14px;
+    color: #8B7355;
+    margin-bottom: 12px;
+    cursor: pointer;
+}
+
+.post-page-username:hover {
+    text-decoration: underline;
 }
