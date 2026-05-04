@@ -7,9 +7,11 @@ import HomePage from './pages/HomePage'
 import PostPage from './pages/PostPage'
 import RegisterPage from './pages/RegisterPage'
 import LoginPage from './pages/LoginPage'
+import UserProfilePage from './pages/UserProfilePage'
 
 function App() {
   const[theme, setTheme] = useState("light")
+  const [isLoggedIn, setIsLoggedIn] = useState(!!localStorage.getItem('token'))
 
 
   function handleThemeToggle(){
@@ -20,12 +22,18 @@ function App() {
   return (
     <BrowserRouter>
       <div className={`app ${theme}`}>
-        <Header theme= {theme} handleThemeToggle= {handleThemeToggle} />
+        <Header 
+          theme= {theme}
+          handleThemeToggle= {handleThemeToggle} 
+          isLoggedIn= {isLoggedIn}
+          setIsLoggedIn= {setIsLoggedIn}
+          />
         <Routes>
           <Route path="/" element={<HomePage />} /> 
           <Route path="/post/:id" element= {<PostPage />} /> 
           <Route path='/register' element={<RegisterPage />}/>
-          <Route path='/login' element={<LoginPage />}/>
+          <Route path='/login' element={<LoginPage setIsLoggedIn= {setIsLoggedIn} />}/>
+          <Route path='/users/:username' element={<UserProfilePage />} />
         </Routes>
         
       </div>

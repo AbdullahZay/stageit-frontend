@@ -73,3 +73,27 @@
   cursor: pointer;
 }
 
+.header-signout {
+    background-color: transparent;
+    border: 1px solid #8B7355;
+    border-radius: 20px;
+    padding: 8px 20px;
+    font-family: Georgia, serif;
+    color: #8B7355;
+    cursor: pointer;
+}
+
+.header-signout:hover {
+    background-color: #8B7355;
+    color: #F5F0E8;
+}
+
+.app.dark .header-signout {
+    border-color: #F5F0E8;
+    color: #F5F0E8;
+}
+
+.app.dark .header-signout:hover {
+    background-color: #F5F0E8;
+    color: #1A1A2E;
+}
