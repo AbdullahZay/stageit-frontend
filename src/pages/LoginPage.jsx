@@ -2,11 +2,24 @@ import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import './LoginPage.css'
 
-function LoginPage() {
+function LoginPage({ setIsLoggedIn }) {
 
     const [email, setEmail] = useState("")
     const [password, setPassword] = useState("")
     const navigate = useNavigate()
+    function handleLogin() {
+        fetch('http://localhost:8080/auth/login', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ email, password })
+        })
+        .then(response => response.json())
+        .then(data => {
+            localStorage.setItem('token', data.token)
+            setIsLoggedIn(true)
+            navigate('/')
+        })
+    }
     
     return(
         <div className="login">
@@ -24,7 +37,7 @@ function LoginPage() {
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
             />
-            <button>Login</button>
+            <button onClick={handleLogin}>Login</button>
             <p>Don't have an account? <span onClick={() => navigate('/register')}>Register</span> </p>
         </div>
     )
