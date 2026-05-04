@@ -1,13 +1,19 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import CategoryBar from "../components/CategoryBar"
 import PostGrid from "../components/PostGrid"
-import { posts } from '../data'
 
 
 function HomePage() {
     const categories = ["Horror", "RPG", "Adventure", "Action"]
 
       const[selected, setSelected] = useState([])
+      const[posts, setPosts] = useState([])
+
+      useEffect(() => {
+        fetch('http://localhost:8080/posts')
+        .then(response => response.json())
+        .then(data => setPosts(data))
+      }, [])
 
       const filteredPosts = selected.length === 0 
   ? posts 
